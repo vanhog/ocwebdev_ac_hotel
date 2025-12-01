@@ -18,7 +18,7 @@
           />
         </div>
         <div class="mx-auto">
-          <div class="flex flex-col md:flex-row gap-4 jusitfy-around">
+          <div class="flex flex-col md:flex-row gap-24 jusitfy-around">
             <div class="basis-normal text-[#957554] font-semibold text-center">
               Our Hotel
             </div>
@@ -33,7 +33,20 @@
               Contact Us
             </div>
             <div class="basis-normal text-[#957554] font-semibold text-center">
-              (Magnifying Glass)
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
             </div>
           </div>
         </div>
@@ -59,7 +72,7 @@
               <div class="flex justify-center mx-auto">
                 <button
                   type="button"
-                  class="bg-orange-300 text-white my-6 py-2 px-16 text-sm rounded-lg font-semibold hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"
+                  class="bg-orange-300 text-white my-6 py-4 px-32 text-lg rounded-lg font-semibold hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"
                 >
                   EXPLORE
                 </button>
@@ -68,8 +81,113 @@
           </div>
         </div>
       </section>
-      <section name="facilities"></section>
+      <section name="facilities" class="mb-24">
+        <div class="flex justify-center flex-col">
+          <div class="text-4xl font-medium text-[#957554] my-6 mx-auto">
+            Facilities
+          </div>
+          <div class="flex justify-center gap-36">
+            <div class="flex flex-col justify-between">
+              <img src="./assets/icon_kitchen.png" alt="Kitchen" />
+              <p class="text-2xl font-medium text-[#957554]">Kitchen</p>
+            </div>
+            <div class="flex flex-col justify-between">
+              <img src="./assets/icon_pool.png" alt="Pool" />
+              <p class="text-2xl font-medium text-[#957554]">Pool</p>
+            </div>
+            <div class="flex flex-col justify-between">
+              <img src="./assets/icon_wifi.png" alt="Wifi" />
+              <p class="text-2xl font-medium text-[#957554]">Wifi</p>
+            </div>
+            <div class="flex flex-col justify-between">
+              <img src="./assets/icon_fitness.png" alt="Gym" />
+              <p class="text-2xl font-medium text-[#957554]">Gym</p>
+            </div>
+            <div class="flex flex-col justify-between">
+              <img src="./assets/icon_taxi.png" alt="Taxi" />
+              <p class="text-2xl font-medium text-[#957554]">Taxi</p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section name="rooms_n_rates"></section>
+      <div class="flex flex-col justify-center">
+        <div class="text-4xl font-medium text-[#957554] my-6 mx-auto">
+          Rooms & Rates
+        </div>
+        <div class="flex flex-row flex-wrap justify-around gap-10 px-48">
+          <div
+            class="flex flex-col text-center mx-auto bg-[url(./assets/standard_twin_room.png)] bg-cover w-2/5 rounded-xl"
+          >
+            <div class="mt-64 mb-4">
+              <h2 class="text-white text-2xl font-semibold text-center">
+                Standard Twin Room
+              </h2>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="bg-orange-300 text-white mb-10 py-3 px-8 text-lg rounded-lg font-semibold hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"
+              >
+                Check Rates
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col text-center mx-auto bg-[url(./assets/standard_room.png)] bg-cover w-2/5 rounded-xl"
+          >
+            <div class="mt-64 mb-4">
+              <h2 class="text-white text-2xl font-semibold text-center">
+                Standard Room
+              </h2>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="bg-orange-300 text-white mb-10 py-3 px-8 text-lg rounded-lg font-semibold hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"
+              >
+                Check Rates
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col text-center mx-auto bg-[url(./assets/standard_view_room.png)] bg-cover w-2/5 rounded-xl"
+          >
+            <div class="mt-64 mb-4">
+              <h2 class="text-white text-2xl font-semibold text-center">
+                Standard View Room
+              </h2>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="bg-orange-300 text-white mb-10 py-3 px-8 text-lg rounded-lg font-semibold hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"
+              >
+                Check Rates
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col text-center mx-auto bg-[url(./assets/deluxe_room.png)] bg-cover w-2/5 rounded-xl"
+          >
+            <div class="mt-64 mb-4">
+              <h2 class="text-white text-2xl font-semibold text-center">
+                Deluxe Room
+              </h2>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="bg-orange-300 text-white mb-10 py-3 px-8 text-lg rounded-lg font-semibold hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"
+              >
+                Check Rates
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <section name="action"></section>
     </main>
     <footer></footer>
