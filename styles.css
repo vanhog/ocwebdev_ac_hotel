@@ -1,1 +1,18 @@
 @import 'tailwindcss';
+
+.bonhotel_button {
+  background-color: orange;
+  color: white;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.bonhotel_button:hover {
+  background-color: #e87a08;
+  color: #c7d0d5;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.2);
+  transform: translateY(1px);
+}
+/*class="bg-orange-300 text-white my-6 py-4 px-32 text-xl rounded-lg font-semibold 
+hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"*/

@@ -15,24 +15,25 @@
             src="./assets/logo_header.png"
             alt="Bon Hotels Nigeria"
             class="text-center"
+            aria-label="Logo Bon Hotels Nigeria"
           />
         </div>
-        <div class="mx-auto">
-          <div class="flex flex-col md:flex-row gap-24 jusitfy-around">
-            <div class="basis-normal text-[#957554] font-semibold text-center">
+        <nav class="mx-auto">
+          <div class="flex flex-col md:flex-row gap-24 justify-around">
+            <div class="text-xl text-[#957554] font-semibold text-center">
               Our Hotel
             </div>
 
-            <div class="basis-normal text-[#957554] font-semibold text-center">
+            <div class="text-xl text-[#957554] font-semibold text-center">
               Rooms & Rates
             </div>
-            <div class="basis-normal text-[#957554] font-semibold text-center">
+            <div class="text-xl text-[#957554] font-semibold text-center">
               Facilities
             </div>
-            <div class="basis-normal text-[#957554] font-semibold text-center">
+            <div class="text-xl text-[#957554] font-semibold text-center">
               Contact Us
             </div>
-            <div class="basis-normal text-[#957554] font-semibold text-center">
+            <div class="text-xl text-[#957554] font-semibold text-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -49,11 +50,11 @@
               </svg>
             </div>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
     <main>
-      <section name="hero">
+      <section id="hero" aria-label="Welcome">
         <div
           class="bg-[url(./assets/hero_image.png)] bg-cover h-screen bg-no-repeat bg-fixed"
         >
@@ -72,7 +73,8 @@
               <div class="flex justify-center mx-auto">
                 <button
                   type="button"
-                  class="bg-orange-300 text-white my-6 py-4 px-32 text-lg rounded-lg font-semibold hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"
+                  aria-label="Button Explore Bon Hotel"
+                  class="bonhotel_button my-6 py-4 px-32"
                 >
                   EXPLORE
                 </button>
@@ -81,7 +83,7 @@
           </div>
         </div>
       </section>
-      <section name="facilities" class="mb-24">
+      <section id="facilities" class="mb-24" aria-label="Hotel Facilities">
         <div class="flex justify-center flex-col">
           <div class="text-4xl font-medium text-[#957554] my-6 mx-auto">
             Facilities
@@ -110,94 +112,100 @@
           </div>
         </div>
       </section>
-      <section name="rooms_n_rates"></section>
-      <div class="flex flex-col justify-center">
-        <div class="text-4xl font-medium text-[#957554] my-10 mx-auto">
-          Rooms & Rates
-        </div>
-        <div class="flex flex-row flex-wrap justify-around gap-10 px-48">
-          <div
-            class="flex flex-col text-center mx-auto bg-[url(./assets/standard_twin_room.png)] bg-cover w-2/5 rounded-xl"
-          >
-            <div class="mt-64 mb-4">
-              <h2 class="text-white text-2xl font-semibold text-center">
-                Standard Twin Room
-              </h2>
-            </div>
-            <div>
-              <button
-                type="button"
-                class="bg-orange-300 text-white mb-10 py-3 px-8 text-lg rounded-lg font-semibold hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"
-              >
-                Check Rates
-              </button>
-            </div>
+      <section id="rooms_n_rates" aria-label="Rooms and Rates">
+        <div class="flex flex-col justify-center">
+          <div class="text-4xl font-medium text-[#957554] my-10 mx-auto">
+            Rooms & Rates
           </div>
-          <div
-            class="flex flex-col text-center mx-auto bg-[url(./assets/standard_room.png)] bg-cover w-2/5 rounded-xl"
-          >
-            <div class="mt-64 mb-4">
-              <h2 class="text-white text-2xl font-semibold text-center">
-                Standard Room
-              </h2>
-            </div>
-            <div>
-              <button
-                type="button"
-                class="bg-orange-300 text-white mb-10 py-3 px-8 text-lg rounded-lg font-semibold hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"
-              >
-                Check Rates
-              </button>
-            </div>
-          </div>
+          <div class="flex flex-row flex-wrap justify-around gap-10 px-48">
+            <article
+              class="flex flex-col text-center mx-auto bg-[url(./assets/standard_twin_room.png)] bg-cover w-2/5 rounded-xl"
+              aria-label="Image Standard Twin Room Example"
+            >
+              <div class="mt-64 mb-4">
+                <h2 class="text-white text-2xl font-semibold text-center">
+                  Standard Twin Room
+                </h2>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  aria-label="Button Check Rates Standard Twin Room"
+                  class="bonhotel_button mb-10 py-3 px-8"
+                >
+                  Check Rates
+                </button>
+              </div>
+            </article>
+            <article
+              class="flex flex-col text-center mx-auto bg-[url(./assets/standard_room.png)] bg-cover w-2/5 rounded-xl"
+              aria-label="Image Standard Room Example"
+            >
+              <div class="mt-64 mb-4">
+                <h2 class="text-white text-2xl font-semibold text-center">
+                  Standard Room
+                </h2>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  aria-label="Button Check Standard Room Rates"
+                  class="bonhotel_button mb-10 py-3 px-8"
+                >
+                  Check Rates
+                </button>
+              </div>
+            </article>
 
-          <div
-            class="flex flex-col text-center mx-auto bg-[url(./assets/standard_view_room.png)] bg-cover w-2/5 rounded-xl"
-          >
-            <div class="mt-64 mb-4">
-              <h2 class="text-white text-2xl font-semibold text-center">
-                Standard View Room
-              </h2>
-            </div>
-            <div>
-              <button
-                type="button"
-                class="bg-orange-300 text-white mb-10 py-3 px-8 text-lg rounded-lg font-semibold hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"
-              >
-                Check Rates
-              </button>
-            </div>
-          </div>
+            <article
+              class="flex flex-col text-center mx-auto bg-[url(./assets/standard_view_room.png)] bg-cover w-2/5 rounded-xl"
+              aria-label="Image Standard View Room Example"
+            >
+              <div class="mt-64 mb-4">
+                <h2 class="text-white text-2xl font-semibold text-center">
+                  Standard View Room
+                </h2>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  aria-label="Button Check Standard View Room Rates"
+                  class="bonhotel_button mb-10 py-3 px-8"
+                >
+                  Check Rates
+                </button>
+              </div>
+            </article>
 
-          <div
-            class="flex flex-col text-center mx-auto bg-[url(./assets/deluxe_room.png)] bg-cover w-2/5 rounded-xl"
-          >
-            <div class="mt-64 mb-4">
-              <h2 class="text-white text-2xl font-semibold text-center">
-                Deluxe Room
-              </h2>
-            </div>
-            <div>
-              <button
-                type="button"
-                class="bg-orange-300 text-white mb-10 py-3 px-8 text-lg rounded-lg font-semibold hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"
-              >
-                Check Rates
-              </button>
-            </div>
+            <article
+              class="flex flex-col text-center mx-auto bg-[url(./assets/deluxe_room.png)] bg-cover w-2/5 rounded-xl"
+              aria-label="Image Deluxe Room Example"
+            >
+              <div class="mt-64 mb-4">
+                <h2 class="text-white text-2xl font-semibold text-center">
+                  Deluxe Room
+                </h2>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  aria-label="Button Check Deluxe Room Rates"
+                  class="bonhotel_button mb-10 py-3 px-8"
+                >
+                  Check Rates
+                </button>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
+      </section>
       <section name="action">
         <div class="flex flex-col mt-32 mb-16 text-center">
           <div class="text-4xl font-medium text-[#957554] text-center">
             Get a room already!
           </div>
           <div class="py-6">
-            <button
-              type="button"
-              class="bg-orange-300 text-white mb-10 py-3 px-32 text-lg rounded-lg font-semibold hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"
-            >
+            <button type="button" class="bonhotel_button mb-10 py-6 px-32">
               Book Now
             </button>
           </div>
@@ -208,7 +216,11 @@
       <div class="flex flex-row justify-between text-left text-white">
         <div class="flex flex-col px-12">
           <div>
-            <img class="py-12" src="./assets/logo_footer.png" alt="" />
+            <img
+              class="py-12"
+              src="./assets/logo_footer.png"
+              alt="Logo Bon Hotel"
+            />
           </div>
           <div>
             <b>Bon Hotel head Office</b> <br />+27 434 344 432
@@ -229,17 +241,18 @@
             Subscribe for Offers
           </div>
           <div class="pt-6">
+            <label for="email_in" class="sr-only">E-Mail</label>
             <input
+              id="email_in"
               class="rounded-lg py-3 basis-1/12 px-7 text-xl"
-              type="text"
+              type="email"
               placeholder="Enter your e-mail"
+              aria-label="Email Inpute"
+              required
             />
           </div>
           <div class="pt-6">
-            <button
-              type="button"
-              class="bg-orange-300 text-white mb-10 py-3 px-24 text-lg rounded-lg font-semibold hover:bg-blue-50 transition-color duration-200 shadow-lg hover:shadow-xl hover:translate-y-1"
-            >
+            <button type="button" class="bonhotel_button mb-10 py-3 px-24">
               Subscribe Now
             </button>
           </div>
