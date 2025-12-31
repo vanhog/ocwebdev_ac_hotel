@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@config './tailwind.config.js';
 
 .bonhotel_button {
   background-color: orange;
