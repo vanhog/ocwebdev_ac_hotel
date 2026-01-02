@@ -4,6 +4,11 @@
   --color-bongold: oklch(0.5854 0.0617 67);
 }
 
+@layer components {
+  .bonbtn_gold {
+    @apply bg-orange-400 text-white  text-lg rounded-lg font-semibold hover:bg-orange-500 transition-all duration-200 shadow-lg hover:shadow-xl hover:translate-y-1;
+  }
+}
 .bonhotel_button {
   background-color: orange;
   color: white;
